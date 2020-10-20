@@ -58,6 +58,7 @@ const map = {
   report: 'report',
   resourceFeedback: 'resource-feedback',
   scriptTag: 'script-tag',
+  sectionMasterPage: 'section-master-page',
   shippingZone: 'shipping-zone',
   shop: 'shop',
   smartCollection: 'smart-collection',

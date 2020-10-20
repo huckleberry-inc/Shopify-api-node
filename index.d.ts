@@ -607,6 +607,14 @@ declare class Shopify {
       params: Shopify.IUpdateScriptTag
     ) => Promise<Shopify.IScriptTag>;
   };
+  sectionMasterPage: {
+    count: (params?: any) => Promise<number>;
+    create: (params: any) => Promise<Shopify.ISectionMasterPage>;
+    delete: (id: number) => Promise<void>;
+    get: (id: number, params?: any) => Promise<Shopify.ISectionMasterPage>;
+    list: (params?: any) => Promise<Shopify.ISectionMasterPage[]>;
+    update: (id: number, params: any) => Promise<Shopify.ISectionMasterPage>;
+  };
   shippingZone: {
     list: (params?: any) => Promise<Shopify.IShippingZone[]>;
   };
@@ -2509,6 +2517,12 @@ declare namespace Shopify {
     id: number;
     src: string;
     display_scope: ScriptTagDisplayScope;
+    updated_at: string;
+  }
+
+  interface ISectionMasterPage {
+    created_at: string;
+    id: number;
     updated_at: string;
   }
 
